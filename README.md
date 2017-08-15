@@ -40,7 +40,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * Module -> Group of component. Usually for a feature
 * src/app.module.ts -> Main module(app module) initializer
 * NgModule -> Decorator which let us declare all the dependencies and component of our application without the need to it on a per-component basis
-* Component -> Reusable piece of UI,usually depicted by the custom tag, AppComponent : Root component 
+* Component -> Reusable piece of UI,usually depicted by the custom tag, AppComponent : Root component
+* ng generate interface person -> To define the interface like thing. Shorthand is : ng g i person
+* ng generate component --inline-template people-list -> Generate the component with inline template. Short hand is : ng g c -it people-list
 
 
 # Chapter 2 : Services and Dependency Injection
