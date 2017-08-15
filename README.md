@@ -34,18 +34,18 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## https://www.barbarianmeetscoding.com/blog/2016/03/25/getting-started-with-angular-2-step-by-step-1-your-first-component/
 
-* ng new -> To create the new project,multiple options available
-* ng server -> To start the application,multiple options available
-* index.html -> Entry point for the application
-* app-root -> Custom tag in html
-* webpack -> Browser independent module bundler for the application
-* src/main.ts -> Bootstrapper of the application like the ng-app in angular1.x
-* Module -> Group of component. Usually for a feature
-* src/app.module.ts -> Main module(app module) initializer
-* NgModule -> Decorator which let us declare all the dependencies and component of our application without the need to it on a per-component basis
-* Component -> Reusable piece of UI,usually depicted by the custom tag, AppComponent : Root component
-* ng generate interface person -> To define the interface like thing. Shorthand is : ng g i person
-* ng generate component --inline-template people-list -> Generate the component with inline template. Short hand is : ng g c -it people-list
+- ng new -> To create the new project,multiple options available
+- ng server -> To start the application,multiple options available
+- index.html -> Entry point for the application
+- app-root -> Custom tag in html
+- webpack -> Browser independent module bundler for the application
+- src/main.ts -> Bootstrapper of the application like the ng-app in angular1.x
+- Module -> Group of component. Usually for a feature
+- src/app.module.ts -> Main module(app module) initializer
+- NgModule -> Decorator which let us declare all the dependencies and component of our application without the need to it on a per-component basis
+- Component -> Reusable piece of UI,usually depicted by the custom tag, AppComponent : Root component
+- ng generate interface person -> To define the interface like thing. Shorthand is : ng g i person
+- ng generate component --inline-template people-list -> Generate the component with inline template. Short hand is : ng g c -it people-list
 
 </details>
 
@@ -56,14 +56,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## https://www.barbarianmeetscoding.com/blog/2016/03/26/getting-started-with-angular-2-step-by-step-2-refactoring-to-services/
 
-* ng generate service people -> Generates the people service. ng g s people(shorthand form)
-* Service inclusion in component -> Use service in component using Dependency Injection
-* Error till now -> Because No provider for PeopleService! (PeopleListComponent -> PeopleService)
-* Register service with angular 2 -> Use the providers property of the component in which this service is supposed to be used
-* Register service at the module level -> user NgModule decorator of AppModule
-* Register service using angular-cli -> angular-cli helps registering service with specific module
-* ngOnInit -> Instead of placing the people code in constructor place it in the ngOnInit. It'll make the constructor more leaner
-* DI in service -> This is service with in another service. Use constructor after importing the other service
+- ng generate service people -> Generates the people service. ng g s people(shorthand form)
+- Service inclusion in component -> Use service in component using Dependency Injection
+- Error till now -> Because No provider for PeopleService! (PeopleListComponent -> PeopleService)
+- Register service with angular 2 -> Use the providers property of the component in which this service is supposed to be used
+- Register service at the module level -> user NgModule decorator of AppModule
+- Register service using angular-cli -> angular-cli helps registering service with specific module
+- ngOnInit -> Instead of placing the people code in constructor place it in the ngOnInit. It'll make the constructor more leaner
+- DI in service -> This is service with in another service. Use constructor after importing the other service
 
 </details>
 
