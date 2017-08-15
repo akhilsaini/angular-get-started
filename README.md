@@ -27,8 +27,11 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+<details>
 
 # Chapter 1 : Components
+<summary>Chapter 1 : Components</summary>
+
 ## https://www.barbarianmeetscoding.com/blog/2016/03/25/getting-started-with-angular-2-step-by-step-1-your-first-component/
 
 * ng new -> To create the new project,multiple options available
@@ -44,8 +47,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * ng generate interface person -> To define the interface like thing. Shorthand is : ng g i person
 * ng generate component --inline-template people-list -> Generate the component with inline template. Short hand is : ng g c -it people-list
 
+</details>
+
+<details>
 
 # Chapter 2 : Services and Dependency Injection
+<summary>Chapter 2 : Services and Dependency Injection</summary>
+
 ## https://www.barbarianmeetscoding.com/blog/2016/03/26/getting-started-with-angular-2-step-by-step-2-refactoring-to-services/
 
 * ng generate service people -> Generates the people service. ng g s people(shorthand form)
@@ -57,12 +65,21 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * ngOnInit -> Instead of placing the people code in constructor place it in the ngOnInit. It'll make the constructor more leaner
 * DI in service -> This is service with in another service. Use constructor after importing the other service
 
-# Chapter 3 : Component and Data Binding
-## https://www.barbarianmeetscoding.com/blog/2016/03/27/getting-started-with-angular-2-step-by-step-3-your-second-component-and-angular-2-data-binding/
+</details>
 
 <details>
-<summary>Chapter 4 : Routing</summary>
 
+# Chapter 3 : Component and Data Binding
+<summary>Chapter 3 : Component and Data Binding</summary>
+
+## https://www.barbarianmeetscoding.com/blog/2016/03/27/getting-started-with-angular-2-step-by-step-3-your-second-component-and-angular-2-data-binding/
+
+</details>
+
+<details>
+
+# Chapter 4 : Routing
+<summary>Chapter 4 : Routing</summary>
 
 ## https://www.barbarianmeetscoding.com/blog/2016/03/28/getting-started-with-angular-2-step-by-step-4-routing/
 
