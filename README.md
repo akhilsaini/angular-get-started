@@ -60,8 +60,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Chapter 3 : Component and Data Binding
 ## https://www.barbarianmeetscoding.com/blog/2016/03/27/getting-started-with-angular-2-step-by-step-3-your-second-component-and-angular-2-data-binding/
 
+<details>
+<summary>Chapter 4 : Routing</summary>
 
-# Chapter 4 : Routing
+
 ## https://www.barbarianmeetscoding.com/blog/2016/03/28/getting-started-with-angular-2-step-by-step-4-routing/
 
 - For routing to work you'll need **@angular/router** module as that's not included in **@angular/core**
@@ -73,4 +75,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - To create the routing link use the **[routerLink]** directive that helps you generate links
 - To extract params from routes you need **ActivatedRoute** service from the **@angular/router** module and inject that service in the component's constructor
 - **ActivatedRoute** returns a **params** property which returns the subscribe decorator pattern which can help get route param. Do this on **ngOnInit** method(hook).
-- To keep the component light you can unsubscribe that decorator in the **ngOnDestroy** method(hook).
+- To keep the component light you can unsubscribe that decorator in the **ngOnDestroy** method(hook)
+</details>
