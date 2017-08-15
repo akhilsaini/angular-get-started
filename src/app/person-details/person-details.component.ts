@@ -1,6 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 import { Person } from '../person';
+import { PeopleService } from '../people.service';
 
 @Component({
   selector: 'app-person-details',
@@ -15,13 +17,24 @@ import { Person } from '../person';
   `,
   styles: []
 })
-export class PersonDetailsComponent implements OnInit {
+export class PersonDetailsComponent implements OnInit,OnDestroy {  
+  // @Input() person : Person;
+  person : Person;
+  sub: any;
 
-  @Input() person : Person;
-
-  constructor() { }
+  constructor(private peopleService : PeopleService,private route : ActivatedRoute) { }
 
   ngOnInit() {
+    this.sub = this.route.params.subscribe(params =>{
+      let id = Number.parseInt(params['id']);
+      this.person = this.peopleService.get(id);
+    });
+
+  }
+
+  ngOnDestroy(): void {
+    //throw new Error("Method not implemented.");
+    this.sub.unsubscribe();
   }
 
 }

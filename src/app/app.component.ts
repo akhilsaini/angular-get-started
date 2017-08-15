@@ -4,8 +4,7 @@ import { PeopleService } from "./people.service";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  providers: [PeopleService]
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'Akhilesh Saini';
