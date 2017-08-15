@@ -12,21 +12,29 @@ import { PeopleService } from "../people.service";
     <!-- this is the new syntax for ng-repeat -->
     <ul>
       <li *ngFor="let person of people">
-        {{person.name}}
+        <a href="#" (click)="selectPerson(person)">
+          {{person.name}}
+        </a>
       </li>
     </ul>
+    <app-person-details [person]="selectedPerson"></app-person-details>
   `,
   styleUrls: ['./people-list.component.scss']
 })
 export class PeopleListComponent implements OnInit {
 
   people: Person[] = [];
+  selectedPerson : Person ;
 
   constructor(private peopleService : PeopleService) { 
     this.people = peopleService.getAll();
   }
 
   ngOnInit() {
+  }
+
+  selectPerson(person){
+    this.selectedPerson = person;
   }
 
 }
