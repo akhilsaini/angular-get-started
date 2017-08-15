@@ -41,3 +41,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * src/app.module.ts -> Main module(app module) initializer
 * NgModule -> Decorator which let us declare all the dependencies and component of our application without the need to it on a per-component basis
 * Component -> Reusable piece of UI,usually depicted by the custom tag, AppComponent : Root component 
+
+
+# Chapter 2 : Services and Dependency Injection
+## https://www.barbarianmeetscoding.com/blog/2016/03/26/getting-started-with-angular-2-step-by-step-2-refactoring-to-services/
+
+* ng generate service people -> Generates the people service. ng g s people(shorthand form)
+* Service inclusion in component -> Use service in component using Dependency Injection
+* Error till now -> Because No provider for PeopleService! (PeopleListComponent -> PeopleService)
+* Register service with angular 2 -> Use the providers property of the component in which this service is supposed to be used
+* Register service at the module level -> user NgModule decorator of AppModule
+* Register service using angular-cli -> angular-cli helps registering service with specific module
+* ngOnInit -> Instead of placing the people code in constructor place it in the ngOnInit. It'll make the constructor more leaner
+* DI in service -> This is service with in another service. Use constructor after importing the other service
+*
