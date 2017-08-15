@@ -54,4 +54,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * Register service using angular-cli -> angular-cli helps registering service with specific module
 * ngOnInit -> Instead of placing the people code in constructor place it in the ngOnInit. It'll make the constructor more leaner
 * DI in service -> This is service with in another service. Use constructor after importing the other service
-*
