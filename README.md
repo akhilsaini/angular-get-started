@@ -75,8 +75,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 </details>
 
 <details>
-
-# Chapter 4 : Routing
+<summary>Chapter 4 : Routing/summary>
 
 [Chapter 4 : Routing](https://www.barbarianmeetscoding.com/blog/2016/03/28/getting-started-with-angular-2-step-by-step-4-routing/)
 
