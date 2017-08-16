@@ -28,10 +28,9 @@ Before running the tests make sure you are serving the app via `ng serve`.
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 <details>
+<summary>Chapter 1 : Components</summary>
 
-# Chapter 1 : Components
-
-[Chapter 1 : Components](https://www.barbarianmeetscoding.com/blog/2016/03/25/getting-started-with-angular-2-step-by-step-1-your-first-component/)
+[Follow Link](https://www.barbarianmeetscoding.com/blog/2016/03/25/getting-started-with-angular-2-step-by-step-1-your-first-component/)
 
 - ng new -> To create the new project,multiple options available
 - ng server -> To start the application,multiple options available
@@ -48,11 +47,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 </details>
 
+
 <details>
+<summary>Chapter 2 : Services and Dependency Injection</summary>
 
-# Chapter 2 : Services and Dependency Injection
-
-[Chapter 2 : Services and Dependency Injection](https://www.barbarianmeetscoding.com/blog/2016/03/26/getting-started-with-angular-2-step-by-step-2-refactoring-to-services/)
+[Follow Link](https://www.barbarianmeetscoding.com/blog/2016/03/26/getting-started-with-angular-2-step-by-step-2-refactoring-to-services/)
 
 - ng generate service people -> Generates the people service. ng g s people(shorthand form)
 - Service inclusion in component -> Use service in component using Dependency Injection
@@ -66,10 +65,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 </details>
 
 <details>
+<summary>Chapter 3 : Component and Data Binding</summary>
 
-# Chapter 3 : Component and Data Binding
-
-[Chapter 3 : Component and Data Binding](https://www.barbarianmeetscoding.com/blog/2016/03/27/getting-started-with-angular-2-step-by-step-3-your-second-component-and-angular-2-data-binding/)
+[Follow Link](https://www.barbarianmeetscoding.com/blog/2016/03/27/getting-started-with-angular-2-step-by-step-3-your-second-component-and-angular-2-data-binding/)
 
 
 </details>
@@ -77,7 +75,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 <details>
 <summary>Chapter 4 : Routing</summary>
 
-[Chapter 4 : Routing](https://www.barbarianmeetscoding.com/blog/2016/03/28/getting-started-with-angular-2-step-by-step-4-routing/)
+[Follow Link](https://www.barbarianmeetscoding.com/blog/2016/03/28/getting-started-with-angular-2-step-by-step-4-routing/)
 
 - For routing to work you'll need **@angular/router** module as that's not included in **@angular/core**
 - You need to have **routes** config array which specify the path and specific component.
