@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { Person } from '../person';
 import { PeopleService } from '../people.service';
@@ -14,6 +14,8 @@ import { PeopleService } from '../people.service';
         {{person.name}} weighs {{person.weight}} and is {{person.height}} tall.
       </p>
     </section>
+    <! -- NEW BUTTON HERE! -->
+    <button (click)="gotoPeoplesList()">Back to peoples list</button>
   `,
   styles: []
 })
@@ -22,7 +24,11 @@ export class PersonDetailsComponent implements OnInit,OnDestroy {
   person : Person;
   sub: any;
 
-  constructor(private peopleService : PeopleService,private route : ActivatedRoute) { }
+  constructor(private peopleService : PeopleService,
+              private route : ActivatedRoute,
+              private router: Router) { 
+
+  }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params =>{
@@ -36,5 +42,12 @@ export class PersonDetailsComponent implements OnInit,OnDestroy {
     //throw new Error("Method not implemented.");
     this.sub.unsubscribe();
   }
+
+  gotoPeoplesList(){
+    let link = ['/persons'];
+    this.router.navigate(link);
+
+    //window.history.back();
+}
 
 }
