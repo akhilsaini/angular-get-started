@@ -9,12 +9,16 @@ import { PersonDetailsComponent } from './person-details/person-details.componen
 import { PeopleService } from './people.service';
 
 import { AppRoutingModule } from "./app-routing.module";
+import { MinValidatorDirective } from './min-validator.directive';
+import { MaxValidatorDirective } from './max-validator.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     PeopleListComponent,
-    PersonDetailsComponent
+    PersonDetailsComponent,
+    MinValidatorDirective,
+    MaxValidatorDirective
   ],
   imports: [
     BrowserModule,

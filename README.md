@@ -88,3 +88,18 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - **ActivatedRoute** returns a **params** property which returns the subscribe decorator pattern which can help get route param. Do this on **ngOnInit** method(hook).
 - To keep the component light you can unsubscribe that decorator in the **ngOnDestroy** method(hook)
 </details>
+
+<details>
+<summary>Chapter 5 : Forms and Validation</summary>
+
+[Follow Link](https://www.barbarianmeetscoding.com/blog/2016/03/29/getting-started-with-angular-2-step-by-step-5-forms-and-validation/)
+
+- To use the forms import the @angular/forms and put it in the imports array of ngModule decorator of app.module.ts
+- To bind the field with data you need to add the [value] and (click) property and event of the input tag
+- To bind the field(2 way data binding) you can also use the ngModel also like in angular1.x
+- Many way for the bindings
+    - Interpolation(one way binding) : {{componentVariable}}
+    - Property Binding(one way binding) : [src]="person.imageUrl"
+    - Event Binding(one way binding) : (click)="selectPerson(person)"
+    - [(ngModel)]  (Two way binding) :  [(ngModel)]="person.name"
+</details>

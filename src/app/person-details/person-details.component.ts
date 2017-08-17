@@ -6,23 +6,14 @@ import { PeopleService } from '../people.service';
 
 @Component({
   selector: 'app-person-details',
-  template: `
-    <section *ngIf="person">
-      <h2>You selected : {{person.name}}</h2>
-      <h3>Description</h3>
-      <p>
-        {{person.name}} weighs {{person.weight}} and is {{person.height}} tall.
-      </p>
-    </section>
-    <! -- NEW BUTTON HERE! -->
-    <button (click)="gotoPeoplesList()">Back to peoples list</button>
-  `,
+  templateUrl: './person-details.component.html',
   styles: []
 })
 export class PersonDetailsComponent implements OnInit,OnDestroy {  
   // @Input() person : Person;
   person : Person;
   sub: any;
+  professions: string[] = ['jedi', 'bounty hunter', 'princess', 'sith lord'];
 
   constructor(private peopleService : PeopleService,
               private route : ActivatedRoute,
@@ -48,6 +39,11 @@ export class PersonDetailsComponent implements OnInit,OnDestroy {
     this.router.navigate(link);
 
     //window.history.back();
-}
+  }
+
+  savePersonDetails(){
+    alert(`saved!!! ${JSON.stringify(this.person)}`);
+    this.peopleService.save(this.person);
+  }
 
 }
